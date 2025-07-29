@@ -1,0 +1,768 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: "rsquare"
+	filename: "machines_contraptions_and_processing"
+	group: ""
+	icon: "gtceu:lv_assembler"
+	id: "5FC2DCBA4B66479C"
+	order_index: 1
+	progression_mode: "flexible"
+	quest_links: [ ]
+	quests: [
+		{
+			description: ["This thing can smash whatever is under it. The item has to be on a depot or conveyor to be processed. You will need a press to turn ingots into plates."]
+			id: "3A8A2C44A4B6B7B9"
+			subtitle: "dont put your hand under it"
+			tasks: [{
+				id: "2D59DBED6166D3AD"
+				item: "create:mechanical_press"
+				type: "item"
+			}]
+			x: -12.0d
+			y: -6.0d
+		}
+		{
+			description: ["The mixer can mix items and fluids in a basin. Some recipes will need heat to process, meaning that you'll need to put a blaze burner under the basin for those recipes."]
+			id: "66A3A19A5EE73E42"
+			subtitle: "its a piece of cake to bake a pretty cake"
+			tasks: [{
+				id: "3C55BA938A621B10"
+				item: "create:mechanical_mixer"
+				type: "item"
+			}]
+			x: -8.0d
+			y: -6.0d
+		}
+		{
+			description: ["The deployer is used in recipes involving placing items on other items. It can also mimic player interactions, like placing blocks."]
+			id: "2CAA87E3F06A801F"
+			tasks: [{
+				id: "047E9902AAB9FB4B"
+				item: "create:deployer"
+				type: "item"
+			}]
+			x: -9.0d
+			y: 0.0d
+		}
+		{
+			description: ["The millstone can grind items. Items are inserted through the top."]
+			id: "0332BE21CD5C79D9"
+			tasks: [{
+				id: "4A869698C76DC464"
+				item: "create:millstone"
+				type: "item"
+			}]
+			x: -12.0d
+			y: -3.0d
+		}
+		{
+			description: ["Crushing wheels are much stronger than millstones and can grind items that a millstone wouldn't be able to. They are very heavy and can put a lot of stress on your network."]
+			id: "1C0B479DA7DD861F"
+			rewards: [{
+				count: 16
+				id: "188A06070BFE43B1"
+				item: "gtceu:brass_ingot"
+				type: "item"
+			}]
+			tasks: [{
+				count: 2L
+				id: "11D072BD96176736"
+				item: "create:crushing_wheel"
+				type: "item"
+			}]
+			title: "Crushing Wheels"
+			x: -11.0d
+			y: -3.0d
+		}
+		{
+			description: ["The bender can efficiently turn ingots into plates. They can work with stronger metals than the mechanical press."]
+			id: "1EE4E5DE311A3DDD"
+			rewards: [{
+				id: "351D9B5805093882"
+				item: "gtceu:basic_electronic_circuit"
+				type: "item"
+			}]
+			subtitle: "definitely dont put your hand under it"
+			tasks: [{
+				id: "24C773AE6B835EA5"
+				item: "gtceu:lv_bender"
+				type: "item"
+			}]
+			title: "Bender"
+			x: -11.0d
+			y: -6.0d
+		}
+		{
+			description: ["Wanna crush stuff with your electricity? The macerator does that. It can also do ore processing."]
+			id: "211D814BD285FB27"
+			rewards: [{
+				id: "54CF973B9D5AC63F"
+				item: "gtceu:basic_electronic_circuit"
+				type: "item"
+			}]
+			subtitle: "getting more ores out of ores"
+			tasks: [{
+				id: "262D1E378486BDDE"
+				item: "gtceu:lv_macerator"
+				type: "item"
+			}]
+			title: "Macerator"
+			x: -12.0d
+			y: -2.0d
+		}
+		{
+			description: ["Did you know that you can get nickel from your iron ore? With the HV macerator, you can extract other materials hidden in your ores."]
+			id: "221D3E5815B82ECA"
+			rewards: [{
+				id: "21721990D030B5BF"
+				item: "gtceu:advanced_integrated_circuit"
+				type: "item"
+			}]
+			subtitle: "basically duping your ores at this point"
+			tasks: [{
+				id: "74AA1575A0CDC970"
+				item: "gtceu:hv_macerator"
+				type: "item"
+			}]
+			title: "Better Macerator"
+			x: -11.0d
+			y: -2.0d
+		}
+		{
+			description: ["You probably hate how the crafting table can't hold your items for you. Make a crafting station, which can. Next time you forget an ingredient, you don't have to worry about anything."]
+			id: "2DC3C54CA813FAD1"
+			subtitle: "\"this... is a crafting station.\""
+			tasks: [{
+				id: "191544A3A168FEE9"
+				item: "tconstruct:crafting_station"
+				type: "item"
+			}]
+			x: -12.0d
+			y: -8.0d
+		}
+		{
+			description: ["Hate vanilla tools? Cool, because now you can make your own. First, make a part builder. Give it a pattern and a material and you can turn it into a tool part."]
+			id: "05D8D8D273EEEA6B"
+			rewards: [{
+				count: 4
+				id: "092D63C54F2F502A"
+				item: "tconstruct:pattern"
+				type: "item"
+			}]
+			tasks: [{
+				id: "57C05084B74C568D"
+				item: "tconstruct:part_builder"
+				type: "item"
+			}]
+			x: -11.0d
+			y: -8.0d
+		}
+		{
+			description: ["With your new parts, you can assemble equipment at the tinker station."]
+			id: "547B0223E662A6AA"
+			tasks: [{
+				id: "12A8943B9D513DBB"
+				item: "tconstruct:tinker_station"
+				type: "item"
+			}]
+			x: -10.0d
+			y: -8.0d
+		}
+		{
+			dependencies: ["547B0223E662A6AA"]
+			description: ["Want new types of tools to assemble? Try out this anvil. It can be made with a load of different metals, but brass is probably the easiest option."]
+			id: "2495924E8DCF2651"
+			tasks: [{
+				id: "38B372CD1622CC3E"
+				item: {
+					Count: 1
+					id: "tconstruct:tinkers_anvil"
+					tag: {
+						texture: "create:brass_block"
+					}
+				}
+				type: "item"
+			}]
+			x: -9.0d
+			y: -8.0d
+		}
+		{
+			description: ["Instead of enchantments, tools from Tinker's Construct use modifers. Some modifiers come from the materials you build your equipment out of. The ones that don't are added using recipes with the modifer worktable (the anvil works too, I think)."]
+			id: "46A9039CC6D8AE54"
+			subtitle: "\"enchantments? those are so 5 minutes ago..\""
+			tasks: [{
+				id: "1B965AD034C1AA05"
+				item: "tconstruct:modifier_worktable"
+				type: "item"
+			}]
+			x: -8.0d
+			y: -8.0d
+		}
+		{
+			description: ["The mixer can blend dusts, fluids, and some other stuff. However, it can't make alloys unless they are in dust/fluid form."]
+			id: "28C857DD85310F2A"
+			rewards: [{
+				id: "142FC88B4CF035A8"
+				item: "gtceu:basic_electronic_circuit"
+				type: "item"
+			}]
+			subtitle: "crispy juicy tender i just put my newborn son into a blender"
+			tasks: [{
+				id: "0B6C51C55AC5EA2C"
+				item: "gtceu:lv_mixer"
+				type: "item"
+			}]
+			title: "Mixer"
+			x: -8.0d
+			y: -5.0d
+		}
+		{
+			description: ["Want to combine your ingots? The alloy smelter does that. It can also do casting."]
+			id: "21C5BAF3815981CC"
+			rewards: [{
+				id: "77614051FC6D62A6"
+				item: "gtceu:basic_electronic_circuit"
+				type: "item"
+			}]
+			subtitle: "metal amalgamation machine"
+			tasks: [{
+				id: "1625C45D8F41CF47"
+				item: "gtceu:lv_alloy_smelter"
+				type: "item"
+			}]
+			title: "Alloy Smelter"
+			x: -7.0d
+			y: -6.0d
+		}
+		{
+			description: ["The spout can fill buckets and pour fluid onto items for crafting recipes. It can't be accessed with a bucket, so fluid needs to be pumped in."]
+			id: "5E26595F20AF55E7"
+			subtitle: "the itsy-bitsy spider went up the hydrochloric acid spout"
+			tasks: [{
+				id: "10CA888F6F224426"
+				item: "create:spout"
+				type: "item"
+			}]
+			x: -9.0d
+			y: -3.0d
+		}
+		{
+			description: ["The item drain can get fluids out of buckets and other containers."]
+			id: "506F919429245509"
+			tasks: [{
+				id: "502FDFF7DE6ABC78"
+				item: "create:item_drain"
+				type: "item"
+			}]
+			x: -8.0d
+			y: -3.0d
+		}
+		{
+			description: ["The disenchanter converts experience into liquid form. Standing on top of it will drain your experience bar while creating liquid experience. This is good if you want to store your XP somewhere safe. Also, when liquid experience exits a pipe, it turns back into normal orbs."]
+			id: "1607845D25860DED"
+			tasks: [{
+				id: "052C862589CE441C"
+				item: "create_enchantment_industry:disenchanter"
+				type: "item"
+			}]
+			x: -8.0d
+			y: -2.0d
+		}
+		{
+			description: ["The printer lets you clone enchantment books for the cost of experience. As long as you have some sort of mob grinder, this is pretty overpowered."]
+			id: "5981DFE75FFA2C8A"
+			tasks: [{
+				id: "231F1CF26ACBDF4F"
+				item: "create_enchantment_industry:printer"
+				type: "item"
+			}]
+			x: -9.0d
+			y: -2.0d
+		}
+		{
+			description: ["The mechanical saw can do sawmill recipes and more. Since one item can lead to many different results, this machine comes with a filter slot so the saw always makes what you want. The saw can also cut logs. You could put these on a spinning contraption to make a tree farm."]
+			id: "31A87071DB841822"
+			tasks: [{
+				id: "73C333525A5DC112"
+				item: "create:mechanical_saw"
+				type: "item"
+			}]
+			x: -12.0d
+			y: 0.0d
+		}
+		{
+			description: ["The mechanical drill can break blocks in front of it. You can use it for automatic cobblestone, creating tunnels, digging for ores and more."]
+			id: "1BD2A26AC6CD580A"
+			tasks: [{
+				id: "209E2CBF046B20DD"
+				item: "create:mechanical_drill"
+				type: "item"
+			}]
+			x: -12.0d
+			y: 1.0d
+		}
+		{
+			description: ["The cutter can't do stonecutter recipes, but it can slice a bunch of other things."]
+			id: "136696851178C592"
+			rewards: [{
+				id: "73FFFFE5EC9D6350"
+				item: "gtceu:basic_electronic_circuit"
+				type: "item"
+			}]
+			tasks: [{
+				id: "23DD602EE55D2DCB"
+				item: "gtceu:lv_cutter"
+				type: "item"
+			}]
+			title: "Cutter"
+			x: -11.0d
+			y: 0.0d
+		}
+		{
+			description: ["The harvester, when part of a contraption, can harvest crops in front of it. Use this to automatically harvest and replant your crops."]
+			id: "65BD64C6D26C9B76"
+			tasks: [{
+				id: "5E01280F36BA02E6"
+				item: "create:mechanical_harvester"
+				type: "item"
+			}]
+			x: -11.0d
+			y: 1.0d
+		}
+		{
+			description: ["The plough can break things that don't have a solid hitbox (like torches and snow layers), create farmland, and more importantly, launch stuff into orbit."]
+			id: "118809D2CB877608"
+			tasks: [{
+				id: "3BBBCB661FC4CF59"
+				item: "create:mechanical_plough"
+				type: "item"
+			}]
+			x: -11.0d
+			y: 2.0d
+		}
+		{
+			description: ["The roller is great for digging tunnels. It can break blocks and make pavement while on a contraption."]
+			id: "0F3D11FEB82C0668"
+			tasks: [{
+				id: "6EE6AD4D028CF6D5"
+				item: "create:mechanical_roller"
+				type: "item"
+			}]
+			x: -12.0d
+			y: 2.0d
+		}
+		{
+			description: ["The assembler puts things together, sometimes even offering cheaper recipes compared to how items are usually crafted."]
+			id: "1661BEE8E139FD8D"
+			rewards: [{
+				id: "166E28C189AE18D5"
+				item: "gtceu:basic_electronic_circuit"
+				type: "item"
+			}]
+			tasks: [{
+				id: "12EDAB59E0B325AC"
+				item: "gtceu:lv_assembler"
+				type: "item"
+			}]
+			title: "Assembler"
+			x: -8.0d
+			y: 0.0d
+		}
+		{
+			description: ["The circuit assembler offers cheaper crafting recipes for circuits. Eventually, when you make more advanced circuits, this machine won't be optional."]
+			id: "7E99E52B5427AD97"
+			rewards: [{
+				id: "56B43C84405718EE"
+				item: "gtceu:good_electronic_circuit"
+				type: "item"
+			}]
+			subtitle: "no it doesnt look the exact same as the assembler"
+			tasks: [{
+				id: "262A1A3D02E789FC"
+				item: "gtceu:lv_circuit_assembler"
+				type: "item"
+			}]
+			title: "Circuit Assembler"
+			x: -9.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["7E99E52B5427AD97"]
+			description: [
+				"Somehow grinded your way to Insane Voltage? Well now you get to deal with the assembly line! It is a multiblock that is used to make advanced parts and is not the same as an assembling machine. In an assembly line recipe, every stack of items has to be placed into separate hatches, in the order that the recipe specifies them in. "
+				""
+				"Additionally, the assembly line can do assembly line recipes from the create mod."
+			]
+			id: "77A1918B3CF3BC05"
+			rewards: [{
+				count: 4
+				id: "176E87CCD946E9AE"
+				item: "gtceu:quantum_processor_mainframe"
+				type: "item"
+			}]
+			subtitle: "gtnh player worst nightmare"
+			tasks: [{
+				id: "5BF5BF8BF74C2C11"
+				item: "gtceu:assembly_line"
+				type: "item"
+			}]
+			x: -8.0d
+			y: 1.0d
+		}
+		{
+			description: ["The extractor can turn items, like metal ingots, into their fluid form."]
+			id: "07B198CFCC33973C"
+			rewards: [{
+				id: "464DA4501D9DA538"
+				item: "gtceu:basic_electronic_circuit"
+				type: "item"
+			}]
+			tasks: [{
+				id: "535E4B58EA7BB870"
+				item: "gtceu:lv_extractor"
+				type: "item"
+			}]
+			title: "Extractor"
+			x: -7.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["21C5BAF3815981CC"]
+			description: ["Molten materials can be shaped into all sorts of things with casting molds. Can you make all of them?"]
+			icon: "gtceu:gear_casting_mold"
+			id: "5B50C4964AAA6BF4"
+			rewards: [{
+				count: 32
+				id: "2C04E7F8057291CD"
+				item: "gtceu:damascus_steel_ingot"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "0B5D413495B07B4B"
+					item: "gtceu:nugget_casting_mold"
+					type: "item"
+				}
+				{
+					id: "5084A8C2119B21DD"
+					item: "gtceu:ingot_casting_mold"
+					type: "item"
+				}
+				{
+					id: "1426A6F9E1AF5BE6"
+					item: "gtceu:block_casting_mold"
+					type: "item"
+				}
+				{
+					id: "2AF6BA4B66606152"
+					item: "gtceu:plate_casting_mold"
+					type: "item"
+				}
+				{
+					id: "206F386EBD7AB3AD"
+					item: "gtceu:cylinder_casting_mold"
+					type: "item"
+				}
+				{
+					id: "1DFC9F8FAD43BEFE"
+					item: "gtceu:ball_casting_mold"
+					type: "item"
+				}
+				{
+					id: "3AF71EFC3EA995C3"
+					item: "gtceu:small_gear_casting_mold"
+					type: "item"
+				}
+				{
+					id: "77539BAFE7ED17FF"
+					item: "gtceu:gear_casting_mold"
+					type: "item"
+				}
+				{
+					id: "1DD59AB510E9D29D"
+					item: "gtceu:rotor_casting_mold"
+					type: "item"
+				}
+			]
+			title: "Casting Molds"
+			x: -7.0d
+			y: -5.0d
+		}
+		{
+			description: ["The LV extruder is too weak for most of its useful recipes. The MV extruder can shape ingots into parts with extruder molds."]
+			id: "7249C59236249AD5"
+			tasks: [{
+				id: "047E50E3AE3772B5"
+				item: "gtceu:mv_extruder"
+				type: "item"
+			}]
+			title: "Extruder"
+			x: -10.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["7249C59236249AD5"]
+			description: ["The extruder has a bunch of its own molds, just like the alloy smelter. Can you craft all of them?"]
+			icon: "gtceu:gear_extruder_mold"
+			id: "5A7A21C58DC89D52"
+			rewards: [{
+				count: 32
+				id: "2A701B53435D1B02"
+				item: "gtceu:vanadium_steel_ingot"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "09B4F756789AB73B"
+					item: "gtceu:ingot_extruder_mold"
+					type: "item"
+				}
+				{
+					id: "1829250C0506132A"
+					item: "gtceu:block_extruder_mold"
+					type: "item"
+				}
+				{
+					id: "3B347BB7ED946D4B"
+					item: "gtceu:plate_extruder_mold"
+					type: "item"
+				}
+				{
+					id: "0ED47154E08C03F3"
+					item: "gtceu:foil_extruder_mold"
+					type: "item"
+				}
+				{
+					id: "0A4C14FCFB6B5DA0"
+					item: "gtceu:bolt_extruder_mold"
+					type: "item"
+				}
+				{
+					id: "11A87A334A3A3DD7"
+					item: "gtceu:rod_extruder_mold"
+					type: "item"
+				}
+				{
+					id: "7C751F70C11C5502"
+					item: "gtceu:ring_extruder_mold"
+					type: "item"
+				}
+				{
+					id: "7E118C650E47D096"
+					item: "gtceu:wire_extruder_mold"
+					type: "item"
+				}
+				{
+					id: "24DC2C13F223B699"
+					item: "gtceu:tiny_pipe_extruder_mold"
+					type: "item"
+				}
+				{
+					id: "5ECAD3877BAECEE7"
+					item: "gtceu:small_pipe_extruder_mold"
+					type: "item"
+				}
+				{
+					id: "223DF6764D5338F7"
+					item: "gtceu:normal_pipe_extruder_mold"
+					type: "item"
+				}
+				{
+					id: "20A12E6961FAE08F"
+					item: "gtceu:large_pipe_extruder_mold"
+					type: "item"
+				}
+				{
+					id: "72247A25126CE587"
+					item: "gtceu:huge_pipe_extruder_mold"
+					type: "item"
+				}
+				{
+					id: "3F588CBE16EB91DD"
+					item: "gtceu:bottle_extruder_mold"
+					type: "item"
+				}
+				{
+					id: "276ABF8DDA688C3A"
+					item: "gtceu:cell_extruder_mold"
+					type: "item"
+				}
+				{
+					id: "26DE57B721EC1C85"
+					item: "gtceu:small_gear_extruder_mold"
+					type: "item"
+				}
+				{
+					id: "78E11075739FD2F3"
+					item: "gtceu:gear_extruder_mold"
+					type: "item"
+				}
+				{
+					id: "05F5AA13D17F2CD4"
+					item: "gtceu:rotor_extruder_mold"
+					type: "item"
+				}
+			]
+			title: "Extruder Molds"
+			x: -10.0d
+			y: -5.0d
+		}
+		{
+			description: ["Want to make four times more wires? Of course you do, craft this already!"]
+			id: "6757C7D43FF859DE"
+			subtitle: "electric gaming"
+			tasks: [{
+				id: "20D9827A1AA2A691"
+				item: "gtceu:lv_wiremill"
+				type: "item"
+			}]
+			title: "Wiremill"
+			x: -11.0d
+			y: -5.0d
+		}
+		{
+			description: ["The rolling mill lets you turn ingots into rods and plates into wires."]
+			id: "4E637DD76781FAC2"
+			tasks: [{
+				id: "56A7394EB97B36DB"
+				item: "createaddition:rolling_mill"
+				type: "item"
+			}]
+			x: -12.0d
+			y: -5.0d
+		}
+		{
+			description: ["The mechanical crafter can do crafting table recipes automatically. Additionally, it can do crafting recipes that require more than a 3x3 grid. All the arrows have to lead to a single point, and the crafters will try to assemble when all the slots are filled."]
+			id: "7442155181D18539"
+			subtitle: "better than 1.21"
+			tasks: [{
+				id: "4604A9ADDAC826E5"
+				item: "create:mechanical_crafter"
+				type: "item"
+			}]
+			x: -6.0d
+			y: -8.0d
+		}
+		{
+			dependencies: ["7442155181D18539"]
+			description: ["Sometimes, slots in crafting recipes have to be empty, yet the mechanical crafters require all slots to be filled. By covering a slot, it counts as full and empty at the same time."]
+			id: "43ABE5132F68CE0D"
+			tasks: [{
+				id: "7A45552882C70F8F"
+				item: "create:crafter_slot_cover"
+				type: "item"
+			}]
+			x: -5.0d
+			y: -8.0d
+		}
+		{
+			description: [
+				"Want your AE2 system to craft stuff for you? Just hook one of these up to a pattern provider and the problem is solved."
+				""
+				"&7Pro Tip: Make sure to put a pattern provider on all six sides of your molecular assembler, so you can add as many crafting recipes as you want!&r"
+			]
+			id: "7F6A9C088AEB1AD2"
+			subtitle: "mechanical crafters? those were sooo five minutes ago.."
+			tasks: [{
+				id: "1BA0F9444103001A"
+				item: "ae2:molecular_assembler"
+				type: "item"
+			}]
+			x: -4.0d
+			y: -8.0d
+		}
+		{
+			dependencies: ["7F6A9C088AEB1AD2"]
+			description: ["Is the molecular assembler too slow for you? Upgrade it to this cool purple one!"]
+			id: "08EAAFF231351E41"
+			subtitle: "molecular assemblers? those were sooo five minutes ago.."
+			tasks: [{
+				id: "0A788F35024385F2"
+				item: "expatternprovider:ex_molecular_assembler"
+				type: "item"
+			}]
+			x: -3.0d
+			y: -8.0d
+		}
+		{
+			dependencies: ["08EAAFF231351E41"]
+			description: ["Is the extended molecular assembler too slow for you? (you impatient ahh) The assembler matrix can craft at unrivaled speeds!"]
+			icon: "expatternprovider:assembler_matrix_frame"
+			id: "119456E0687E0F3A"
+			rewards: [
+				{
+					count: 32
+					id: "1D943803A539BFF2"
+					item: "ae2:fluix_smart_dense_cable"
+					type: "item"
+				}
+				{
+					count: 64
+					id: "00E0F6F1977A2E55"
+					item: "ae2:charged_certus_quartz_crystal"
+					type: "item"
+				}
+			]
+			subtitle: "extended molecular assemblers? those were soo- *gets hit with an intercontinental ballistic missile*"
+			tasks: [
+				{
+					count: 24L
+					id: "7FC3BD12E7CFE44C"
+					item: { Count: 20, id: "expatternprovider:assembler_matrix_frame" }
+					type: "item"
+				}
+				{
+					count: 10L
+					id: "6A7F47DBF295785B"
+					item: { Count: 10, id: "expatternprovider:assembler_matrix_wall" }
+					type: "item"
+				}
+				{
+					id: "49BDF5AFCF35EA8D"
+					item: "expatternprovider:assembler_matrix_pattern"
+					type: "item"
+				}
+				{
+					id: "10346846731388F9"
+					item: "expatternprovider:assembler_matrix_crafter"
+					type: "item"
+				}
+			]
+			title: "Assembler Matrix"
+			x: -2.0d
+			y: -8.0d
+		}
+		{
+			dependencies: ["119456E0687E0F3A"]
+			description: [
+				"These work like acceleration cards, but they are for your assembler matrix!"
+				""
+				"&7Note: These aren't required for the actual multiblock to be valid so I didn't put them in the first quest.&r"
+			]
+			id: "78DEB12852EDA64E"
+			subtitle: "i am speed"
+			tasks: [{
+				id: "08EC6EBA01A42495"
+				item: "expatternprovider:assembler_matrix_speed"
+				type: "item"
+			}]
+			title: "Speed Cores"
+			x: -1.0d
+			y: -8.0d
+		}
+		{
+			dependencies: ["119456E0687E0F3A"]
+			description: ["If you want, you can use these in the place of the assembler's walls so you can see inside. Not much functional use though."]
+			id: "7EE6B4FB3FA1DBDD"
+			tasks: [{
+				id: "47CAFBB28B5A1944"
+				item: "expatternprovider:assembler_matrix_glass"
+				type: "item"
+			}]
+			x: 0.0d
+			y: -8.0d
+		}
+	]
+	subtitle: ["is that a gregtech reference"]
+	title: "Machinery \\&\\ Processing"
+}
