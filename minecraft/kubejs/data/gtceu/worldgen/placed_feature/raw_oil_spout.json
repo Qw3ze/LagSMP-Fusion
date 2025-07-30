@@ -1,0 +1,9 @@
+{
+    "feature": "gtceu:raw_oil_spout",
+    "placement": [
+        {
+            "type": "minecraft:count",
+            "count": 0
+        }
+    ]
+}

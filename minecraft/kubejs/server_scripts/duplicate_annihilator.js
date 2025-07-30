@@ -268,4 +268,18 @@ ServerEvents.recipes((event) => {
         "#forge:plates/obsidian"
     ]
   );
+  //sulfur
+  event.remove({ id: "alexscaves:gunpowder_from_sulfur" });
+  event.remove({ output: "alexscaves:sulfur" });
+  removedupes(
+    "gtceu:sulfur_dust",
+    [
+        "alexscaves:sulfur_dust",
+        "#forge:dusts/sulfur"
+    ]
+  );
+  //uranium
+  event.remove({ output: "create:crushed_raw_uranium" });
+  event.remove({ output: "crowns:uranium_ingot" });
+  event.replaceInput({ input: "#forge:raw_materials/uranium" }, "#forge:raw_materials/uranium", "alexscaves:uranium");
 });

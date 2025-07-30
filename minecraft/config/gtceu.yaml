@@ -106,7 +106,7 @@ worldgen:
   # Whether to increase number of rolls for dungeon chests. Increases dungeon loot drastically.
   # Default: true
   # WARNING: Currently unimplemented.
-  increaseDungeonLoot: true
+  increaseDungeonLoot: false
 
   # Allow GregTech to add additional GregTech Items as loot in various structures.
   # Default: true
@@ -131,7 +131,7 @@ worldgen:
 
     # Distance between bedrock ore veins in chunks, if enabled.
     # Default: 16
-    bedrockOreDistance: 16
+    bedrockOreDistance: 32
 
     # Make bedrock ore/fluid veins infinite?
     # Default: false
