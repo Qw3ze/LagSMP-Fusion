@@ -128,4 +128,7 @@ ServerEvents.recipes(event => {
         'minecraft:raw_gold_block',
         'minecraft:gold_ingot'
     );
+
+    //ae2
+    
 });

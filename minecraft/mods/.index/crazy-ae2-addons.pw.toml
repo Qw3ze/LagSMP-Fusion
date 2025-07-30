@@ -1,0 +1,13 @@
+filename = 'crazyae2addons-1.13.22-all.jar'
+name = 'Crazy AE2 Addons'
+side = 'both'
+
+[download]
+hash = '3883578c8c7fabe1d4c2e64e81a9d74fccd94cc3e705d3f6a7c25842f1861560c90e87d37cf56b4939b1eefc1b716b10a5ba592f093743190a54dd27c24215da'
+hash-format = 'sha512'
+mode = 'url'
+url = 'https://cdn.modrinth.com/data/anaGQD2Q/versions/4Uzo1DC8/crazyae2addons-1.13.22-all.jar'
+
+[update.modrinth]
+mod-id = 'anaGQD2Q'
+version = '4Uzo1DC8'

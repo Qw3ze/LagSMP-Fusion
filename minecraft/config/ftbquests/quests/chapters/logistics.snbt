@@ -306,7 +306,7 @@
 				item: "create:fluid_pipe"
 				type: "item"
 			}]
-			title: "Copper Pipes"
+			title: "Mechanical Fluid Pipes"
 			x: -2.0d
 			y: -2.0d
 		}
@@ -319,7 +319,7 @@
 				item: "create:smart_fluid_pipe"
 				type: "item"
 			}]
-			title: "Smart Copper Pipe"
+			title: "Smart Mechanical Fluid Pipe"
 			x: -2.0d
 			y: -1.0d
 		}
@@ -501,6 +501,7 @@
 				item: "create:fluid_valve"
 				type: "item"
 			}]
+			title: "Mechanical Fluid Valve"
 			x: -1.0d
 			y: -1.0d
 		}
@@ -853,6 +854,55 @@
 			title: "Beam Condenser"
 			x: -4.0d
 			y: -4.5d
+		}
+		{
+			description: [
+				"Drones are cool, right? These ones can deliver items to players or move them between robo ports."
+				""
+				"To reference a player, use the @ prefix."
+			]
+			icon: "create_mobile_packages:robo_bee"
+			id: "126E4EEDB319ADB4"
+			tasks: [
+				{
+					id: "67BF5323B08F662A"
+					item: "create_mobile_packages:bee_port"
+					type: "item"
+				}
+				{
+					id: "0CE6FAA6B60BE8CD"
+					item: "create_mobile_packages:robo_bee"
+					type: "item"
+				}
+			]
+			title: "Bee Swarm Simulator"
+			x: 0.0d
+			y: 1.5d
+		}
+		{
+			description: ["Isn't it annoying to have to go to your stock keeper guy every time you want a package? Invest in a wireless ticker, and you won't ever need to talk to your stock keeper again!"]
+			id: "796F20C81D8F12F3"
+			subtitle: "literally just the ae2 wireless terminal"
+			tasks: [{
+				id: "1846F0D4F4FB43DE"
+				item: "create_mobile_packages:portable_stock_ticker"
+				type: "item"
+			}]
+			title: "Packages on the go"
+			x: 0.0d
+			y: 2.5d
+		}
+		{
+			description: ["Have you realized that you've recreated one of life's many problems in a block game and are now struggling to get somewhere by train? The navigator can help you get to any station by connecting the routes of multiple trains."]
+			id: "1936A3616DFEB881"
+			tasks: [{
+				id: "11EB0D5546418A91"
+				item: "createrailwaysnavigator:navigator"
+				type: "item"
+			}]
+			title: "Railway Navigator"
+			x: -4.0d
+			y: 4.0d
 		}
 	]
 	subtitle: ["get your items from point a to point b"]

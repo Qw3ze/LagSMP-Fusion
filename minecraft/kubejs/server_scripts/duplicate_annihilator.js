@@ -250,7 +250,8 @@ ServerEvents.recipes((event) => {
   removedupes(
     "ae2:quartz_block",
     [
-        "gtceu:certus_quartz_block"
+        "gtceu:certus_quartz_block",
+        "#forge:storage_blocks/certus_quartz"
     ]
   );
   //obsidian

@@ -127,6 +127,23 @@
 			x: -1.0d
 			y: 3.0d
 		}
+		{
+			description: [
+				"First of all, nothing here is final! That means I can change the recipes, rework machines, or even remove current mods. Please don't get mad at me, I just want the modpack to be fun, fair and balanced."
+				""
+				"Secondly, quests take a bunch of time to write. I didn't have the time to fill every quest page, so expect more in future updates."
+			]
+			icon: "createdeco:decal_warning"
+			id: "144007F4614BB228"
+			tasks: [{
+				id: "6AB151BD323E0BFD"
+				title: "Okie dokie"
+				type: "checkmark"
+			}]
+			title: "This modpack isn't done yet!"
+			x: -1.0d
+			y: -1.0d
+		}
 	]
 	subtitle: ["not really quests but still useful"]
 	title: "Info"
