@@ -1,0 +1,16 @@
+filename = 'claim_shop_for_lightmans_currency-0.2.1.jar'
+name = 'Claim Shop For Lightmans Currency'
+side = 'both'
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.20.1' ]
+x-prismlauncher-release-type = 'release'
+
+[download]
+hash = '07403c502bd6fd6dbbf2381bc69beaf36b648b48'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 6503754
+project-id = 1068923

@@ -1,0 +1,16 @@
+filename = 'lctech-1.20.1-0.2.2.3.jar'
+name = "Lightman's Currency Tech"
+side = 'both'
+x-prismlauncher-loaders = [ 'forge' ]
+x-prismlauncher-mc-versions = [ '1.20.1' ]
+x-prismlauncher-release-type = 'release'
+
+[download]
+hash = '687e2000977bc91ad75c290a942632a465a9d5e9'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 6626274
+project-id = 548152
