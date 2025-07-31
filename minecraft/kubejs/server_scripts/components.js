@@ -1,6 +1,20 @@
 ServerEvents.recipes((event) => {
     const greg = event.recipes.gtceu;
 
+    //andesite alloy
+    event.remove({ id: 'create:crafting/materials/andesite_alloy' });
+    event.remove({ id: 'create:crafting/materials/andesite_alloy_from_zinc' });
+    event.remove({ id: 'create:mixing/andesite_alloy' });
+    event.remove({ id: 'create:mixing/andesite_alloy_from_zinc' });
+    event.shaped('create:andesite_alloy', [
+            'AB', 
+            'BA' 
+        ], {
+            A: '#kubejs:andesite_alloy_material', 
+            B: 'minecraft:andesite'
+    });
+    event.recipes.create.mixing('create:andesite_alloy', ['minecraft:andesite', '#kubejs:andesite_alloy_material']);
+
     //circuit stuff
     event.remove({ id: 'create:crafting/materials/electron_tube' });
     event.shaped('create:electron_tube', [
