@@ -5,38 +5,11 @@
 	group: ""
 	icon: "gtceu:lv_assembler"
 	id: "5FC2DCBA4B66479C"
-	order_index: 2
+	order_index: 1
 	progression_mode: "flexible"
 	quest_links: [ ]
 	quests: [
 		{
-			dependencies: ["17F658FDA1B6AA42"]
-			description: ["This thing can smash whatever is under it. The item has to be on a depot or conveyor to be processed. You will need a press to turn ingots into plates."]
-			id: "3A8A2C44A4B6B7B9"
-			subtitle: "dont put your hand under it"
-			tasks: [{
-				id: "2D59DBED6166D3AD"
-				item: "create:mechanical_press"
-				type: "item"
-			}]
-			x: -12.0d
-			y: -6.0d
-		}
-		{
-			dependencies: ["17F658FDA1B6AA42"]
-			description: ["The mixer can mix items and fluids in a basin. Some recipes will need heat to process, meaning that you'll need to put a blaze burner under the basin for those recipes."]
-			id: "66A3A19A5EE73E42"
-			subtitle: "its a piece of cake to bake a pretty cake"
-			tasks: [{
-				id: "3C55BA938A621B10"
-				item: "create:mechanical_mixer"
-				type: "item"
-			}]
-			x: -8.0d
-			y: -6.0d
-		}
-		{
-			dependencies: ["17F658FDA1B6AA42"]
 			description: ["The deployer is used in recipes involving placing items on other items. It can also mimic player interactions, like placing blocks."]
 			id: "2CAA87E3F06A801F"
 			tasks: [{
@@ -48,39 +21,6 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["17F658FDA1B6AA42"]
-			description: ["The millstone can grind items. Items are inserted through the top."]
-			id: "0332BE21CD5C79D9"
-			tasks: [{
-				id: "4A869698C76DC464"
-				item: "create:millstone"
-				type: "item"
-			}]
-			x: -12.0d
-			y: -3.0d
-		}
-		{
-			dependencies: ["54C670EDB5CF0628"]
-			description: ["Crushing wheels are much stronger than millstones and can grind items that a millstone wouldn't be able to. They are very heavy and can put a lot of stress on your network."]
-			id: "1C0B479DA7DD861F"
-			rewards: [{
-				count: 16
-				id: "188A06070BFE43B1"
-				item: "gtceu:brass_ingot"
-				type: "item"
-			}]
-			tasks: [{
-				count: 2L
-				id: "11D072BD96176736"
-				item: "create:crushing_wheel"
-				type: "item"
-			}]
-			title: "Crushing Wheels"
-			x: -11.0d
-			y: -3.0d
-		}
-		{
-			dependencies: ["4721F218C04AF2DD"]
 			description: ["The bender can efficiently turn ingots into plates. It can work with metals that are too tough for the mechanical press."]
 			id: "1EE4E5DE311A3DDD"
 			rewards: [{
@@ -100,7 +40,6 @@
 			y: -6.0d
 		}
 		{
-			dependencies: ["4721F218C04AF2DD"]
 			description: ["Wanna crush stuff with your electricity? The macerator does that. It can also do ore processing."]
 			id: "211D814BD285FB27"
 			rewards: [{
@@ -120,7 +59,6 @@
 			y: -2.0d
 		}
 		{
-			dependencies: ["1BAE74FAF7F1FEA1"]
 			description: ["Did you know that you can get nickel from your iron ore? With the HV macerator, you can extract other materials hidden in your ores."]
 			id: "221D3E5815B82ECA"
 			rewards: [{
@@ -210,7 +148,6 @@
 			y: -8.0d
 		}
 		{
-			dependencies: ["4721F218C04AF2DD"]
 			description: ["The mixer can blend dusts, fluids, and some other stuff. However, it can't make alloys unless they are in dust/fluid form."]
 			id: "28C857DD85310F2A"
 			rewards: [{
@@ -230,7 +167,6 @@
 			y: -5.0d
 		}
 		{
-			dependencies: ["4721F218C04AF2DD"]
 			description: ["Want to combine your ingots? The alloy smelter does that. It can also do casting."]
 			id: "21C5BAF3815981CC"
 			rewards: [{
@@ -250,7 +186,6 @@
 			y: -6.0d
 		}
 		{
-			dependencies: ["4E4BAC1506A3EE7F"]
 			description: ["The spout can fill buckets and pour fluid onto items for crafting recipes. It can't be accessed with a bucket, so fluid needs to be pumped in."]
 			id: "5E26595F20AF55E7"
 			subtitle: "the itsy-bitsy spider went up the hydrochloric acid spout"
@@ -263,7 +198,6 @@
 			y: -3.0d
 		}
 		{
-			dependencies: ["4E4BAC1506A3EE7F"]
 			description: ["The item drain can get fluids out of buckets and other containers."]
 			id: "506F919429245509"
 			tasks: [{
@@ -275,7 +209,6 @@
 			y: -3.0d
 		}
 		{
-			dependencies: ["4E4BAC1506A3EE7F"]
 			description: ["The disenchanter converts experience into liquid form. Standing on top of it will drain your experience bar while creating liquid experience. This is good if you want to store your XP somewhere safe. Also, when liquid experience exits a pipe, it turns back into normal orbs."]
 			id: "1607845D25860DED"
 			tasks: [{
@@ -287,7 +220,6 @@
 			y: -2.0d
 		}
 		{
-			dependencies: ["4E4BAC1506A3EE7F"]
 			description: ["The printer lets you clone enchantment books for the cost of experience. As long as you have some sort of mob grinder, this is pretty overpowered."]
 			id: "5981DFE75FFA2C8A"
 			tasks: [{
@@ -299,19 +231,6 @@
 			y: -2.0d
 		}
 		{
-			dependencies: ["17F658FDA1B6AA42"]
-			description: ["The mechanical saw can do sawmill recipes and more. Since one item can lead to many different results, this machine comes with a filter slot so the saw always makes what you want. The saw can also cut logs. You could put these on a spinning contraption to make a tree farm."]
-			id: "31A87071DB841822"
-			tasks: [{
-				id: "73C333525A5DC112"
-				item: "create:mechanical_saw"
-				type: "item"
-			}]
-			x: -12.0d
-			y: 0.0d
-		}
-		{
-			dependencies: ["17F658FDA1B6AA42"]
 			description: ["The mechanical drill can break blocks in front of it. You can use it for automatic cobblestone, creating tunnels, digging for ores and more."]
 			id: "1BD2A26AC6CD580A"
 			tasks: [{
@@ -323,7 +242,6 @@
 			y: 1.0d
 		}
 		{
-			dependencies: ["4721F218C04AF2DD"]
 			description: ["The cutter can't do stonecutter recipes, but it can slice a bunch of other things."]
 			id: "136696851178C592"
 			rewards: [{
@@ -342,7 +260,6 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["17F658FDA1B6AA42"]
 			description: ["The harvester, when part of a contraption, can harvest crops in front of it. Use this to automatically harvest and replant your crops."]
 			id: "65BD64C6D26C9B76"
 			tasks: [{
@@ -354,7 +271,6 @@
 			y: 1.0d
 		}
 		{
-			dependencies: ["17F658FDA1B6AA42"]
 			description: ["The plough can break things that don't have a solid hitbox (like torches and snow layers), create farmland, and more importantly, launch stuff into orbit."]
 			id: "118809D2CB877608"
 			tasks: [{
@@ -366,7 +282,6 @@
 			y: 2.0d
 		}
 		{
-			dependencies: ["17F658FDA1B6AA42"]
 			description: ["The roller is great for digging tunnels. It can break blocks and make pavement while on a contraption."]
 			id: "0F3D11FEB82C0668"
 			tasks: [{
@@ -378,7 +293,6 @@
 			y: 2.0d
 		}
 		{
-			dependencies: ["4721F218C04AF2DD"]
 			description: ["The assembler puts things together, sometimes even offering cheaper recipes compared to how items are usually crafted."]
 			id: "1661BEE8E139FD8D"
 			rewards: [{
@@ -396,7 +310,6 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["4721F218C04AF2DD"]
 			description: ["The circuit assembler offers cheaper crafting recipes for circuits. Eventually, when you make more advanced circuits, this machine won't be optional."]
 			id: "7E99E52B5427AD97"
 			rewards: [{
@@ -441,7 +354,6 @@
 			y: 1.0d
 		}
 		{
-			dependencies: ["4721F218C04AF2DD"]
 			description: ["The extractor can turn items, like metal ingots, into their fluid form."]
 			id: "07B198CFCC33973C"
 			rewards: [{
@@ -522,7 +434,6 @@
 			y: -5.0d
 		}
 		{
-			dependencies: ["70EBD424F81DE9B4"]
 			description: ["The LV extruder is too weak for most of its useful recipes. The MV extruder can shape ingots into parts with extruder molds."]
 			id: "7249C59236249AD5"
 			rewards: [{
@@ -648,7 +559,6 @@
 			y: -5.0d
 		}
 		{
-			dependencies: ["4721F218C04AF2DD"]
 			description: ["Want to make four times more wires? Of course you do, craft this already!"]
 			id: "6757C7D43FF859DE"
 			rewards: [{
@@ -668,7 +578,6 @@
 			y: -5.0d
 		}
 		{
-			dependencies: ["17F658FDA1B6AA42"]
 			description: ["The rolling mill lets you turn ingots into rods and plates into wires."]
 			id: "4E637DD76781FAC2"
 			tasks: [{
@@ -680,7 +589,6 @@
 			y: -5.0d
 		}
 		{
-			dependencies: ["54C670EDB5CF0628"]
 			description: ["The mechanical crafter can do crafting table recipes automatically. Additionally, it can do crafting recipes that require more than a 3x3 grid. All the arrows have to lead to a single point, and the crafters will try to assemble when all the slots are filled."]
 			id: "7442155181D18539"
 			subtitle: "better than 1.21"
@@ -812,23 +720,6 @@
 			y: -8.0d
 		}
 		{
-			dependencies: ["17F658FDA1B6AA42"]
-			description: [
-				"The encased fan can push and pull air, as a way to move items around. It works with chutes too."
-				""
-				"It can process many different recipe types based on what you put in front of it. For example, putting lava in front of a fan smelts the items caught in its wind."
-			]
-			id: "33E5292D64024FFF"
-			tasks: [{
-				id: "2DADDC2A8C1A408E"
-				item: "create:encased_fan"
-				type: "item"
-			}]
-			x: -5.0d
-			y: -6.0d
-		}
-		{
-			dependencies: ["4721F218C04AF2DD"]
 			description: ["Instead of solid fuel, you could be using electricity to smelt your items! Even if you use solid fuel to make your energy, the electric furnace's ability to overclock makes it totally worth making."]
 			id: "65FFA085E2CE438B"
 			rewards: [{
@@ -847,7 +738,6 @@
 			y: -6.0d
 		}
 		{
-			dependencies: ["521914FE72269927"]
 			description: ["Though you need fuel to make steam, you could be smelting your items with steam instead of solid fuel!"]
 			id: "1B9562F957E8A436"
 			rewards: [{
@@ -937,7 +827,6 @@
 			y: -6.0d
 		}
 		{
-			dependencies: ["1BAE74FAF7F1FEA1"]
 			description: [
 				"&7Hah, this is kind of like how Toby Fox uses double meanings.&r"
 				""
@@ -995,7 +884,6 @@
 			y: -5.0d
 		}
 		{
-			dependencies: ["4721F218C04AF2DD"]
 			description: ["The ore washer cleans up impure ores. It's part of the process to get the most out of your ores."]
 			id: "5841816283459D7C"
 			rewards: [{
@@ -1026,7 +914,6 @@
 			y: -5.0d
 		}
 		{
-			dependencies: ["70EBD424F81DE9B4"]
 			description: ["Powered by electricity, the pyrolyse oven multiblock is a much more powerful version of the coke oven."]
 			id: "0B94C6658C8CF0A7"
 			tasks: [{
@@ -1070,7 +957,6 @@
 			y: -5.0d
 		}
 		{
-			dependencies: ["1BAE74FAF7F1FEA1"]
 			description: ["The electric blast furnace is a much more powerful version of the primitive blast furnace. It can make metals like steel in seconds and can get hot enough to make aluminium, with it's max heat being set by the tier of coil it is built with. The EBF consumes a lot of energy. If it keeps running out of power, try adding a second energy hatch."]
 			icon: "gtceu:electric_blast_furnace"
 			id: "3FB3C565DB19AEAD"

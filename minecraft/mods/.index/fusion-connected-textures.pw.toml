@@ -1,0 +1,13 @@
+filename = 'fusion-1.2.10-forge-mc1.20.1.jar'
+name = 'Fusion'
+side = 'both'
+
+[download]
+hash = '372c78d9d28e2974263f31e5c9254b4e986962dc'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 6826826
+project-id = 854949

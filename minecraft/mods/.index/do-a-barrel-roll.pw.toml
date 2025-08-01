@@ -1,0 +1,13 @@
+filename = 'do_a_barrel_roll-forge-3.5.6+1.20.1.jar'
+name = 'Do a Barrel Roll'
+side = 'both'
+
+[download]
+hash = '08b58bfbdf20660bdc5a0c4a0b088f7d89f40a38'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 5326142
+project-id = 663658

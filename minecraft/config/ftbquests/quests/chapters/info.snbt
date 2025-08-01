@@ -86,24 +86,6 @@
 		}
 		{
 			description: [
-				"If you've played my previous modpacks, you might have remembered how everything is supposed to be done in order. I've realised that this is entirely against what Minecraft is about."
-				""
-				"In this pack, however, I want you to do what you want. I'll try to make it so you get to decide what you make whether than the quest book. Have fun!"
-			]
-			icon: "minecraft:nether_star"
-			id: "57DDBEB97985B45C"
-			subtitle: "\"...in Minecraft? You gotta be kidding me!\""
-			tasks: [{
-				id: "45FF36DACAE4D441"
-				title: "Ok"
-				type: "checkmark"
-			}]
-			title: "Linear Progression?"
-			x: 0.0d
-			y: -1.0d
-		}
-		{
-			description: [
 				"Instead of being scattered across the underground, ores spawn in huge deposits. The downside to this is that it's no longer guarunteed that you will find the ore you want in every chunk of land. The upside to this is that you will have tons of ores once you find the deposit you are looking for."
 				""
 				"A lot of ores are not pure elements. For example, Chalcopyrite Ore can be smelted into copper. However, it also contains iron and sulfur that can be extracted as byproducts through advanced ore processing."
@@ -142,7 +124,7 @@
 				type: "checkmark"
 			}]
 			title: "This modpack isn't done yet!"
-			x: -1.0d
+			x: 0.0d
 			y: -1.0d
 		}
 	]

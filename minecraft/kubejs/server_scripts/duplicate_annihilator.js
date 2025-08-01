@@ -4,12 +4,6 @@ ServerEvents.recipes((event) => {
   //pre dupe removal
 
   //rolling mill stuff
-  event.replaceInput(
-    { input: 'createaddition:iron_wire' },
-    'createaddition:iron_wire',
-    'gtceu:fine_tin_wire'
-  );
-  event.remove({ output: 'createaddition:iron_wire' });
 
   //dupe annihilator function
   function removedupes(item, duplicates) {

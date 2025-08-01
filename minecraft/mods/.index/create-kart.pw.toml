@@ -1,0 +1,13 @@
+filename = 'create_kart-2.3.0-forge-1.20.1.jar'
+name = 'Create Kart'
+side = 'both'
+
+[download]
+hash = 'bfcd48e4ff7ebd21f5a30521131682d068eaca32'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 6325893
+project-id = 1148009

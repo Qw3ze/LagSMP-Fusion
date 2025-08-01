@@ -161,4 +161,6 @@ ServerEvents.recipes(event => {
     fluidtype('gtceu:distilled_water', 3)
     fluidtype('gtceu:lubricant', 2)
 
+    //get rid of that stupid expatprovider rip off
+    event.remove({ output: "crazyae2addons:crazy_pattern_provider"});
 });

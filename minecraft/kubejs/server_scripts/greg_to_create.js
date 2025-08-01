@@ -1,3 +1,4 @@
+/*
 ServerEvents.recipes((event) => {
   const greg = event.recipes.gtceu;
   
@@ -177,3 +178,4 @@ ServerEvents.recipes((event) => {
   //battery alloy
   alloyAll("5x gtceu:battery_alloy", "4x gtceu:lead", "gtceu:antimony");
 });
+*/

@@ -5,61 +5,10 @@
 	group: ""
 	icon: "create:package_frogport"
 	id: "612D957F4DB67C62"
-	order_index: 3
+	order_index: 2
 	progression_mode: "flexible"
 	quest_links: [ ]
 	quests: [
-		{
-			dependencies: ["17F658FDA1B6AA42"]
-			description: [
-				"Look, I don't want to make a quest for every block involving rotation transportation. So I put the important ones into one quest. You don't have to make all of these, but I'll give you a good reward if you do."
-				""
-				"&7Note: Instead of reading about how something works in the quest book, you can ponder some stuff with the W key.&r"
-			]
-			icon: "create:cogwheel"
-			id: "64B9CE6870D736BB"
-			rewards: [{
-				count: 32
-				id: "5C2E1CFA91F137A9"
-				item: "create:andesite_alloy"
-				type: "item"
-			}]
-			tasks: [
-				{
-					id: "26317B157FD26907"
-					item: "create:shaft"
-					type: "item"
-				}
-				{
-					id: "0D92AC8114B0ACEA"
-					item: "create:cogwheel"
-					type: "item"
-				}
-				{
-					id: "40A8AA13B5401943"
-					item: "create:large_cogwheel"
-					type: "item"
-				}
-				{
-					id: "502CCBB02A78F32B"
-					item: "create:gearbox"
-					type: "item"
-				}
-				{
-					id: "6A78E5B9D50CF465"
-					item: "create:encased_chain_drive"
-					type: "item"
-				}
-				{
-					id: "1266494E3924B6B9"
-					item: "petrolsparts:double_cardan_shaft"
-					type: "item"
-				}
-			]
-			title: "Getting rotation around"
-			x: -6.0d
-			y: -5.5d
-		}
 		{
 			description: [
 				"Place a mechanical belt on two shafts and it will do what a conveyor does. It can also be used to transport rotation, I guess."
@@ -157,7 +106,6 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["17F658FDA1B6AA42"]
 			description: ["A depot can hold up to a stack of an one item. Besides conveyors, a depot is a good way to input items to mechanical machines."]
 			id: "7B7B95A49194FA41"
 			subtitle: "insert the home depot theme here"
@@ -170,7 +118,6 @@
 			y: -3.0d
 		}
 		{
-			dependencies: ["17F658FDA1B6AA42"]
 			description: [
 				"The chain conveyor can transfer rotational power by attaching a chain to another one. You can right click a chain with a wrench to ride it!"
 				""
@@ -212,7 +159,6 @@
 			y: 1.5d
 		}
 		{
-			dependencies: ["4E4BAC1506A3EE7F"]
 			description: [
 				"Connect this to some sort of storage and it will load and unload packages. Don't ask me where all the cardboard comes from. A packager will only create a package when given a signal from either redstone or a stock link. "
 				""
@@ -332,7 +278,6 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["54C670EDB5CF0628"]
 			description: [
 				"The mechanical arm can grab items off of things like depots and conveyors and place them where you need them to go. It makes some things a lot easier, but it is very expensive to craft."
 				""
@@ -349,7 +294,6 @@
 			y: -2.0d
 		}
 		{
-			dependencies: ["54C670EDB5CF0628"]
 			description: [
 				"You probably already know that you can use cogwheels to speed up or slow down rotation. That method isn't that much fun, though. The rotation speed controller lets you set the speed of your power system to a specific number. The downside is that it is expensive to craft."
 				""
@@ -390,100 +334,7 @@
 			y: -3.0d
 		}
 		{
-			dependencies: ["0D92AC8114B0ACEA"]
-			description: ["Don't want your cogs to connect for some reason? Here's your solution."]
-			icon: "petrolsparts:coaxial_gear"
-			id: "2941AE836C5B6309"
-			tasks: [
-				{
-					icon: "petrolsparts:coaxial_gear"
-					id: "554AD4A6C22DCD4B"
-					item: "petrolsparts:coaxial_gear"
-					type: "item"
-				}
-				{
-					id: "6008FFF36D8D75F9"
-					item: "petrolsparts:large_coaxial_gear"
-					type: "item"
-				}
-			]
-			title: "Shaftless Cogwheels"
-			x: -5.0d
-			y: -5.5d
-		}
-		{
-			dependencies: ["40A8AA13B5401943"]
-			description: ["Uh... how did these work again?"]
-			icon: "petrolsparts:planetary_gearset"
-			id: "13EDC46A354AF857"
-			tasks: [
-				{
-					id: "44DD4C1EFA51AC3B"
-					item: "petrolsparts:planetary_gearset"
-					type: "item"
-				}
-				{
-					id: "6E49782568A4E14C"
-					item: "petrolsparts:differential"
-					type: "item"
-				}
-			]
-			title: "Advanced Cogwheels"
-			x: -4.0d
-			y: -5.5d
-		}
-		{
-			dependencies: ["54C670EDB5CF0628"]
-			description: ["I can't think of where I would use this, but it certainly looks cool."]
-			id: "4605628E16EFE2C0"
-			tasks: [{
-				id: "09753834029E3B6D"
-				item: "petrolsparts:colossal_cogwheel"
-				type: "item"
-			}]
-			title: "BIG Cogwheel"
-			x: -3.0d
-			y: -5.5d
-		}
-		{
-			dependencies: ["54C670EDB5CF0628"]
-			description: ["For a hefty price, you can use this piece of witchcraft to move your rotation whereever you'd like."]
-			id: "17F6F010D211B80C"
-			rewards: [{
-				id: "7CCC91AC77A94279"
-				item: "create:precision_mechanism"
-				type: "item"
-			}]
-			subtitle: "how does this even work"
-			tasks: [{
-				count: 2L
-				id: "5197A90E43EBDD58"
-				item: "petrolsparts:hydraulic_transmission"
-				type: "item"
-			}]
-			title: "Hydraulic Transmission"
-			x: -1.0d
-			y: -5.5d
-		}
-		{
-			description: ["Pneumatic tubes can be connected to two inventories and are used to transport items. They are very flexible and cool, but a bit expensive."]
-			id: "6238BDF016B5A277"
-			subtitle: "\"conveyor belt? never heard of it\""
-			tasks: [{
-				count: 2L
-				id: "033523F823833F52"
-				item: { Count: 2, id: "petrolsparts:pneumatic_tube" }
-				type: "item"
-			}]
-			title: "Pneumatic Tubes"
-			x: -4.0d
-			y: -1.0d
-		}
-		{
-			dependencies: [
-				"195C6C9DEF8CDC24"
-				"17F658FDA1B6AA42"
-			]
+			dependencies: ["195C6C9DEF8CDC24"]
 			description: ["These can load and unload items on contraptions."]
 			id: "7DB5C1AC7983A1C4"
 			tasks: [{
@@ -508,10 +359,7 @@
 			y: -1.0d
 		}
 		{
-			dependencies: [
-				"195C6C9DEF8CDC24"
-				"4E4BAC1506A3EE7F"
-			]
+			dependencies: ["195C6C9DEF8CDC24"]
 			description: ["These can load and unload fluids on contraptions."]
 			hide_dependency_lines: true
 			id: "3C37134CCB508799"
@@ -524,7 +372,6 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["54C670EDB5CF0628"]
 			description: ["Trains are a great method of long distance transportation! They can travel at high speeds if given burnable fuel. A train's inventory can be accessed with a portable interface."]
 			icon: "create:controls"
 			id: "3F4EC6740742E8C7"
@@ -666,7 +513,6 @@
 			y: -4.5d
 		}
 		{
-			dependencies: ["4E4BAC1506A3EE7F"]
 			description: ["You might be wondering how to transport your fluids through your chain network. Introducing: jars! They are like packages, but hold fluids."]
 			id: "31B27D5368F57F92"
 			subtitle: "yeah theres a fluid one now"
@@ -679,7 +525,6 @@
 			y: 2.5d
 		}
 		{
-			dependencies: ["54C670EDB5CF0628"]
 			description: [
 				"How does this work?"
 				""
@@ -751,24 +596,6 @@
 			y: -1.0d
 		}
 		{
-			dependencies: ["17F658FDA1B6AA42"]
-			description: [
-				"Are shafts too expensive? (you lazy ahh) The optical source converts rotation into light! Just make sure nothing gets in the way of your laser."
-				""
-				"&7Fun Fact: You can color your lasers with stained glass.&r"
-			]
-			id: "5490AF33A29CA1F1"
-			subtitle: "man i sure hope lasers dont come back to haunt me in zpm"
-			tasks: [{
-				id: "27E7F5A8609F7664"
-				item: "create_optical:optical_source"
-				type: "item"
-			}]
-			title: "Optical Source"
-			x: -6.0d
-			y: -4.5d
-		}
-		{
 			description: ["This serves the same functionality as the item filter, but this time it is an upgrade for the electric pump and fluid regulator."]
 			id: "6E79A45278E2D28C"
 			tasks: [{
@@ -778,18 +605,6 @@
 			}]
 			x: 3.0d
 			y: 0.0d
-		}
-		{
-			dependencies: ["17F658FDA1B6AA42"]
-			description: ["The optical receptor turns laser beams into rotational force. You need to place an optical device on it in order for the receptor to recieve light."]
-			id: "32C60D21BE04B72D"
-			tasks: [{
-				id: "3571C5519F1E36D9"
-				item: "create_optical:optical_receptor"
-				type: "item"
-			}]
-			x: -5.0d
-			y: -4.5d
 		}
 		{
 			description: ["Want trains to deliver your mail for you? Trains can automatically load and unload packages and jars as they pass them. Additionally, you can set train schedules to travel to a package's destination."]
@@ -830,46 +645,6 @@
 			y: -4.5d
 		}
 		{
-			dependencies: ["17F658FDA1B6AA42"]
-			description: ["You might have noticed how lasers can only move in straight lines. With mirrors, you can send them in other directions. You can also rotate the mirror from the shaft."]
-			id: "07D6D9BDD530E42A"
-			tasks: [{
-				id: "7257DD4D8BA2D7C6"
-				item: "create_optical:encased_mirror"
-				type: "item"
-			}]
-			title: "Mirrors"
-			x: -3.0d
-			y: -4.5d
-		}
-		{
-			dependencies: ["17F658FDA1B6AA42"]
-			description: ["With the beam splitter you can divide your laser into two, with each having half the intensity as the original."]
-			id: "32425928CB6407CF"
-			tasks: [{
-				id: "6E1ABAE0ED9227ED"
-				item: "create_optical:polarizing_beam_splitter_block"
-				type: "item"
-			}]
-			title: "Beam Splitter"
-			x: -2.0d
-			y: -4.5d
-		}
-		{
-			dependencies: ["17F658FDA1B6AA42"]
-			description: ["The beam condenser can merge lasers, combining both color and intensity."]
-			id: "65987253B6F7EBC9"
-			tasks: [{
-				id: "702F8695EC0702C4"
-				item: "create_optical:beam_condenser"
-				type: "item"
-			}]
-			title: "Beam Condenser"
-			x: -4.0d
-			y: -4.5d
-		}
-		{
-			dependencies: ["17F658FDA1B6AA42"]
 			description: [
 				"Drones are cool, right? These ones can deliver items to players or move them between robo ports."
 				""
@@ -894,7 +669,6 @@
 			y: 1.5d
 		}
 		{
-			dependencies: ["4E4BAC1506A3EE7F"]
 			description: ["Isn't it annoying to have to go to your stock keeper guy every time you want a package? Invest in a wireless ticker, and you won't ever need to talk to your stock keeper again!"]
 			id: "796F20C81D8F12F3"
 			subtitle: "literally just the ae2 wireless terminal"

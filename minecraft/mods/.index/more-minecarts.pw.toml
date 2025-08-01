@@ -1,0 +1,13 @@
+filename = 'moreminecarts-1.8.3.jar'
+name = 'More Minecarts and Rails'
+side = 'both'
+
+[download]
+hash = '0ed634ff1b067b0f6aecc3cb5cc818973978f5f3'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 5134064
+project-id = 440845
