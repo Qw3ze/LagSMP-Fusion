@@ -3,6 +3,7 @@
 	default_quest_shape: "rsquare"
 	filename: "guide_andesite_age"
 	group: "687B5D9EC86DCB87"
+	icon: "create:andesite_alloy"
 	id: "4D5E33A2CF09F313"
 	order_index: 0
 	progression_mode: "linear"

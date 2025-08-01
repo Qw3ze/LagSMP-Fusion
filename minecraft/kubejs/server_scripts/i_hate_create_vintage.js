@@ -11,30 +11,45 @@ const VINTAGE_IMPROVEMENTS_DISABLED_ITEMS = [
 	'vintage:incomplete_recipe_card',
 	
 	'vintage:andesite_sheet',
-    'vintage:bronze_sheet',
+    'vintage:aluminum_rod',
 	'vintage:amethyst_bronze_sheet',
+	'vintage:bronze_sheet',
+	'vintage:cast_iron_sheet',
+	'vintage:cobalt_sheet',
 	'vintage:constantan_sheet',
 	'vintage:enderium_sheet',
 	'vintage:hepatizon_sheet',
+	'vintage:invar_sheet',
+	'vintage:lead_sheet',
+	'vintage:zinc_sheet',
 	'vintage:lumium_sheet',
 	'vintage:manyullyn_sheet',
+	'vintage:nickel_sheet',
+	'vintage:osmium_sheet',
+	'vintage:palladium_sheet',
 	'vintage:pig_iron_sheet',
+	'vintage:platinum_sheet',
 	'vintage:pure_gold_sheet',
 	'vintage:refined_glowstone_sheet',
 	'vintage:refined_obsidian_sheet',
+	'vintage:rhodium_sheet',
+	'vintage:rose_gold_sheet',
+	'vintage:signalum_sheet',
+	'vintage:silver_sheet',
+	'vintage:steel_sheet',
 	'vintage:tin_sheet',
 	'vintage:uranium_sheet',
-	'vintage:signalum_sheet',
 	'vintage:refined_radiance_sheet',
-	'vintage:fiery_sheet',
 	'vintage:ironwood_sheet',
 	'vintage:knightmetal_sheet',
 	'vintage:queens_slime_sheet',
 	'vintage:slimesteel_sheet',
+	'vintage:vanadium_sheet',
 	'vintage:netherite_sheet',
 	'vintage:nethersteel_sheet',
 	'vintage:andesite_sheet',
 	'vintage:shadow_steel_sheet',
+	'vintage:desh_sheet',
 
 	'vintage:andesite_rod',
     'vintage:aluminum_rod',
@@ -77,13 +92,14 @@ const VINTAGE_IMPROVEMENTS_DISABLED_ITEMS = [
 	'vintage:shadow_steel_rod',
 	'vintage:desh_rod',
     'vintage:vanadium_nugget',
-    'vintage:vanadium_ingot'
+    'vintage:vanadium_ingot',
+	'vintage:sulfuric_acid_bucket'
 ]
 
 const VINTAGE_IMPROVEMENTS_DISABLED_BLOCKS = [
 
 	'vintage:sulfur_block',
-    'vintage:vanadium_block',
+    'vintage:vanadium_block'
 
 ]
 
@@ -139,29 +155,23 @@ function registerVintageImprovementsItemTags(event) {
 	event.add('vintage:curving_heads', 'gtceu:foil_extruder_mold')
 	event.add('vintage:curving_heads', 'gtceu:cylinder_casting_mold')
 }
-
-
 function registerVintageImprovementsBlockTags(event) {
 	VINTAGE_IMPROVEMENTS_DISABLED_BLOCKS.forEach(item => {
 		event.removeAllTagsFrom(item)
-		event.add('forge:hidden_from_recipe_viewers', item)
+		event.add('c:hidden_from_recipe_viewers', item)
 	})
-
-	//event.add('vintageimprovements:custom_hammering_blocks', '#tfc:anvils')
 }
-
-
 function registerVintageImprovementsFluidTags(event) {
 	VINTAGE_IMPROVEMENTS_DISABLED_FLUIDS.forEach(item => {
 		event.removeAllTagsFrom(item)
-		event.add('forge:hidden_from_recipe_viewers', item)
+		event.add('c:hidden_from_recipe_viewers', item)
 	})
 }
 
 ServerEvents.tags('item', event => {
     registerVintageImprovementsItemTags(event);
 });
-ServerEvents.tags('fluid', event => {
+ServerEvents.tags('block', event => {
     registerVintageImprovementsBlockTags(event);
 });
 ServerEvents.tags('fluid', event => {
@@ -178,4 +188,10 @@ ServerEvents.recipes((event) => {
     VINTAGE_IMPROVEMENTS_DISABLED_FLUIDS.forEach(item => {
 		event.remove({ output: item })
 	})
+
+	//this MIGHT work
+	event.remove({ output: /^vintage:.*_sheet/ });
+	event.remove({ output: /^vintage:.*_rod/ });
+	event.remove({ output: /^vintage:.*_wire/ });
+	event.remove({ output: /^vintage:.*_spring/ });
 });
