@@ -479,6 +479,70 @@ ServerEvents.recipes((event) => {
             B: 'create:andesite_casing',
             C: 'create:andesite_alloy_block'
     });
-
-    
+	event.remove({ id: 'greate:shaped/andesite_alloy_mechanical_mixer' });
+    event.shaped('greate:andesite_alloy_mechanical_mixer', [
+            'A',
+            'B',
+            'C'
+        ], {
+            A: 'greate:andesite_alloy_cogwheel', 
+            B: 'create:andesite_casing',
+            C: 'gtceu:andesite_alloy_whisk'
+    });
+	event.remove({ id: 'gtceu:shaped/andesite_alloy_whisk' });
+    event.shaped('gtceu:andesite_alloy_whisk', [
+            ' A ',
+            'BAB',
+            'BBB'
+        ], {
+            A: 'create:andesite_alloy', 
+            B: 'gtceu:andesite_alloy_plate'
+    });
+	event.remove({ id: 'greate:shaped/andesite_alloy_mechanical_saw' });
+    event.shaped('greate:andesite_alloy_mechanical_saw', [
+            'A',
+            'B',
+            'C'
+        ], {
+            A: 'gtceu:andesite_alloy_buzz_saw_blade', 
+            B: 'create:andesite_casing',
+            C: 'greate:andesite_alloy_shaft'
+    });
+    event.remove({ id: 'gtceu:shaped/buzz_saw_blade_andesite_alloy' });
+    event.shaped('gtceu:andesite_alloy_buzz_saw_blade', [
+            ' B ',
+            'B B',
+            ' B '
+        ], {
+            B: 'gtceu:andesite_alloy_plate'
+    });
+	event.remove({ id: 'greate:shaped/andesite_alloy_encased_fan' });
+    event.shaped('greate:andesite_alloy_encased_fan', [
+            'A',
+            'B',
+            'C'
+        ], {
+            A: 'greate:andesite_alloy_shaft', 
+            B: 'create:andesite_casing',
+            C: 'gtceu:andesite_alloy_rotor'
+    });
+    event.remove({ id: 'gtceu:shaped/rotor_andesite_alloy' });
+    event.shaped('gtceu:andesite_alloy_rotor', [
+            ' B ',
+            'BAB',
+            ' B '
+        ], {
+            A: 'create:andesite_alloy', 
+			B: 'gtceu:andesite_alloy_plate'
+    });
+	event.remove({ id: 'greate:shaped/andesite_alloy_millstone' });
+    event.shaped('greate:andesite_alloy_millstone', [
+            'A',
+            'B',
+            'C'
+        ], {
+            A: 'greate:andesite_alloy_cogwheel', 
+            B: 'create:andesite_casing',
+            C: '#forge:stone'
+    });
 });
