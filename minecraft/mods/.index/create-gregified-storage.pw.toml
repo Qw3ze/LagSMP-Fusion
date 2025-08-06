@@ -1,0 +1,13 @@
+filename = 'create_gs-1.20.1-1.0.1.jar'
+name = 'Create: Gregified Storage'
+side = 'both'
+
+[download]
+hash = '297b5f621fe15eb39cad681ba15b92d9b7b8aeb2'
+hash-format = 'sha1'
+mode = 'metadata:curseforge'
+url = ''
+
+[update.curseforge]
+file-id = 6491122
+project-id = 1257680

@@ -323,11 +323,11 @@ ServerEvents.recipes((event) => {
 	*/
 
 	//recycling gaming
+	/*
 	stupid.forEach(item => {
-		event.remove({ id: "gtceu:macerator/macerate_"+item });
-		event.remove({ id: "gtceu:arc_furnace/arc_"+item });
-		event.remove({ id: "gtceu:extractor/extract_"+item });
+		ItemMaterialData.clearMaterialInfo(item);
 	});
+	*/
     //greate replacements
     event.replaceInput(
         { input: 'create:shaft' },
@@ -363,11 +363,11 @@ ServerEvents.recipes((event) => {
         {  mod: 'greate' },
         [
             'gtceu:ulv_machine_casing',
-            'gtceu:lv_machine_casing',
-            'gtceu:mv_machine_casing',
-            'gtceu:hv_machine_casing',
-            'gtceu:ev_machine_casing',
-            'gtceu:iv_machine_casing'
+            //'gtceu:lv_machine_casing',
+            //'gtceu:mv_machine_casing',
+            //'gtceu:hv_machine_casing',
+            //'gtceu:ev_machine_casing',
+            //'gtceu:iv_machine_casing'
             //'gtceu:luv_machine_casing',
             //'gtceu:zpm_machine_casing',
             //'gtceu:uv_machine_casing',
@@ -407,6 +407,7 @@ ServerEvents.recipes((event) => {
         'minecraft:andesite')
     .itemOutputs("create:andesite_alloy")
     .duration(80)
+	.removePreviousMaterialInfo()
     .EUt(8);
 	
     //other alloys
@@ -469,7 +470,6 @@ ServerEvents.recipes((event) => {
     });
     */
     //create machines
-    event.remove({ id: 'greate:shaped/andesite_alloy_mechanical_press' });
     event.shaped('greate:andesite_alloy_mechanical_press', [
             'A',
             'B',
@@ -478,8 +478,21 @@ ServerEvents.recipes((event) => {
             A: 'greate:andesite_alloy_shaft', 
             B: 'create:andesite_casing',
             C: 'create:andesite_alloy_block'
-    });
-	event.remove({ id: 'greate:shaped/andesite_alloy_mechanical_mixer' });
+    }).id('greate:shaped/andesite_alloy_mechanical_press');
+	greg
+    .macerator("greate:andesite_alloy_mechanical_press")
+    .itemInputs('greate:andesite_alloy_mechanical_press')
+    .itemOutputs("10x gtceu:andesite_alloy_dust", "gtceu:wood_dust")
+    .duration(80)
+	.category(GTRecipeCategories.MACERATOR_RECYCLING)
+    .EUt(8);
+	greg
+    .arc_furnace("greate:andesite_alloy_mechanical_press")
+    .itemInputs('greate:andesite_alloy_mechanical_press')
+    .itemOutputs("10x create:andesite_alloy")
+    .duration(80)
+	.category(GTRecipeCategories.ARC_FURNACE_RECYCLING)
+    .EUt(8);
     event.shaped('greate:andesite_alloy_mechanical_mixer', [
             'A',
             'B',
@@ -488,8 +501,21 @@ ServerEvents.recipes((event) => {
             A: 'greate:andesite_alloy_cogwheel', 
             B: 'create:andesite_casing',
             C: 'gtceu:andesite_alloy_whisk'
-    });
-	event.remove({ id: 'gtceu:shaped/andesite_alloy_whisk' });
+    }).id('greate:shaped/andesite_alloy_mechanical_mixer');
+	greg
+    .macerator("greate:andesite_alloy_mechanical_mixer")
+    .itemInputs('greate:andesite_alloy_mechanical_mixer')
+    .itemOutputs("8x gtceu:andesite_alloy_dust", "gtceu:wood_dust")
+    .duration(80)
+	.category(GTRecipeCategories.MACERATOR_RECYCLING)
+    .EUt(8);
+	greg
+    .arc_furnace("greate:andesite_alloy_mechanical_mixer")
+    .itemInputs('greate:andesite_alloy_mechanical_mixer')
+    .itemOutputs("8x create:andesite_alloy")
+    .duration(80)
+	.category(GTRecipeCategories.ARC_FURNACE_RECYCLING)
+    .EUt(8);
     event.shaped('gtceu:andesite_alloy_whisk', [
             ' A ',
             'BAB',
@@ -497,8 +523,30 @@ ServerEvents.recipes((event) => {
         ], {
             A: 'create:andesite_alloy', 
             B: 'gtceu:andesite_alloy_plate'
-    });
-	event.remove({ id: 'greate:shaped/andesite_alloy_mechanical_saw' });
+    }).id('gtceu:shaped/andesite_alloy_whisk');
+	greg
+    .macerator("gtceu:andesite_alloy_whisk")
+    .itemInputs('gtceu:andesite_alloy_whisk')
+    .itemOutputs("7x gtceu:andesite_alloy_dust")
+    .duration(80)
+	.category(GTRecipeCategories.MACERATOR_RECYCLING)
+    .EUt(8);
+	greg
+    .arc_furnace("gtceu:andesite_alloy_whisk")
+    .itemInputs('gtceu:andesite_alloy_whisk')
+    .itemOutputs("7x create:andesite_alloy")
+    .duration(80)
+	.category(GTRecipeCategories.ARC_FURNACE_RECYCLING)
+    .EUt(8);
+    /*
+	greg
+    .extractor("gtceu:andesite_alloy_whisk")
+    .itemInputs('gtceu:andesite_alloy_whisk')
+    .fluidOutputs(Fluid.of('gtceu:liquid_andesite_alloy', 1008))
+    .duration(80)
+	.category(GTRecipeCategories.EXTRACTOR_RECYCLING)
+    .EUt(8);
+    */
     event.shaped('greate:andesite_alloy_mechanical_saw', [
             'A',
             'B',
@@ -507,16 +555,51 @@ ServerEvents.recipes((event) => {
             A: 'gtceu:andesite_alloy_buzz_saw_blade', 
             B: 'create:andesite_casing',
             C: 'greate:andesite_alloy_shaft'
-    });
-    event.remove({ id: 'gtceu:shaped/buzz_saw_blade_andesite_alloy' });
+    }).id('greate:shaped/andesite_alloy_mechanical_saw');
+	greg
+    .macerator("greate:andesite_alloy_mechanical_saw")
+    .itemInputs('greate:andesite_alloy_mechanical_saw')
+    .itemOutputs("5x gtceu:andesite_alloy_dust", "gtceu:wood_dust")
+    .duration(80)
+	.category(GTRecipeCategories.MACERATOR_RECYCLING)
+    .EUt(8);
+	greg
+    .arc_furnace("greate:andesite_alloy_mechanical_saw")
+    .itemInputs('greate:andesite_alloy_mechanical_saw')
+    .itemOutputs("5x create:andesite_alloy")
+    .duration(80)
+	.category(GTRecipeCategories.ARC_FURNACE_RECYCLING)
+    .EUt(8);
     event.shaped('gtceu:andesite_alloy_buzz_saw_blade', [
             ' B ',
             'B B',
             ' B '
         ], {
             B: 'gtceu:andesite_alloy_plate'
-    });
-	event.remove({ id: 'greate:shaped/andesite_alloy_encased_fan' });
+    }).id('gtceu:shaped/buzzsaw_blade_andesite_alloy');
+	greg
+    .macerator("gtceu:andesite_alloy_buzz_saw_blade")
+    .itemInputs('gtceu:andesite_alloy_buzz_saw_blade')
+    .itemOutputs("4x gtceu:andesite_alloy_dust")
+    .duration(80)
+	.category(GTRecipeCategories.MACERATOR_RECYCLING)
+    .EUt(8);
+	greg
+    .arc_furnace("gtceu:andesite_alloy_buzz_saw_blade")
+    .itemInputs('gtceu:andesite_alloy_buzz_saw_blade')
+    .itemOutputs("4x create:andesite_alloy")
+    .duration(80)
+	.category(GTRecipeCategories.ARC_FURNACE_RECYCLING)
+    .EUt(8);
+    /*
+    greg
+    .extractor("gtceu:andesite_alloy_buzz_saw_blade")
+    .itemInputs('gtceu:andesite_alloy_buzz_saw_blade')
+    .fluidOutputs(Fluid.of('gtceu:liquid_andesite_alloy', 576))
+    .duration(80)
+	.category(GTRecipeCategories.EXTRACTOR_RECYCLING)
+    .EUt(8);
+    */
     event.shaped('greate:andesite_alloy_encased_fan', [
             'A',
             'B',
@@ -525,8 +608,21 @@ ServerEvents.recipes((event) => {
             A: 'greate:andesite_alloy_shaft', 
             B: 'create:andesite_casing',
             C: 'gtceu:andesite_alloy_rotor'
-    });
-    event.remove({ id: 'gtceu:shaped/rotor_andesite_alloy' });
+    }).id('greate:shaped/andesite_alloy_encased_fan');
+	greg
+    .macerator("greate:andesite_alloy_encased_fan")
+    .itemInputs('greate:andesite_alloy_encased_fan')
+    .itemOutputs("6x gtceu:andesite_alloy_dust", "gtceu:wood_dust")
+    .duration(80)
+	.category(GTRecipeCategories.MACERATOR_RECYCLING)
+    .EUt(8);
+	greg
+    .arc_furnace("greate:andesite_alloy_encased_fan")
+    .itemInputs('greate:andesite_alloy_encased_fan')
+    .itemOutputs("6x create:andesite_alloy")
+    .duration(80)
+	.category(GTRecipeCategories.ARC_FURNACE_RECYCLING)
+    .EUt(8);
     event.shaped('gtceu:andesite_alloy_rotor', [
             ' B ',
             'BAB',
@@ -534,8 +630,30 @@ ServerEvents.recipes((event) => {
         ], {
             A: 'create:andesite_alloy', 
 			B: 'gtceu:andesite_alloy_plate'
-    });
-	event.remove({ id: 'greate:shaped/andesite_alloy_millstone' });
+    }).id('gtceu:shaped/rotor_andesite_alloy');
+	greg
+    .macerator("gtceu:andesite_alloy_rotor")
+    .itemInputs('gtceu:andesite_alloy_rotor')
+    .itemOutputs("5x gtceu:andesite_alloy_dust")
+    .duration(80)
+	.category(GTRecipeCategories.MACERATOR_RECYCLING)
+    .EUt(8);
+	greg
+    .arc_furnace("gtceu:andesite_alloy_rotor")
+    .itemInputs('gtceu:andesite_alloy_rotor')
+    .itemOutputs("5x create:andesite_alloy")
+    .duration(80)
+	.category(GTRecipeCategories.ARC_FURNACE_RECYCLING)
+    .EUt(8);
+    /*
+    greg
+    .extractor("gtceu:andesite_alloy_rotor")
+    .itemInputs('gtceu:andesite_alloy_rotor')
+    .fluidOutputs(Fluid.of('gtceu:liquid_andesite_alloy', 720))
+    .duration(80)
+	.category(GTRecipeCategories.EXTRACTOR_RECYCLING)
+    .EUt(8);
+    */
     event.shaped('greate:andesite_alloy_millstone', [
             'A',
             'B',
@@ -544,5 +662,19 @@ ServerEvents.recipes((event) => {
             A: 'greate:andesite_alloy_cogwheel', 
             B: 'create:andesite_casing',
             C: '#forge:stone'
-    });
+    }).id('greate:shaped/andesite_alloy_millstone');
+	greg
+    .macerator("greate:andesite_alloy_millstone")
+    .itemInputs('greate:andesite_alloy_encased_fan')
+    .itemOutputs("gtceu:andesite_alloy_dust", "2x gtceu:wood_dust")
+    .duration(80)
+	.category(GTRecipeCategories.MACERATOR_RECYCLING)
+    .EUt(8);
+	greg
+    .arc_furnace("greate:andesite_alloy_millstone")
+    .itemInputs('greate:andesite_alloy_millstone')
+    .itemOutputs("create:andesite_alloy")
+    .duration(80)
+	.category(GTRecipeCategories.ARC_FURNACE_RECYCLING)
+    .EUt(8);
 });
