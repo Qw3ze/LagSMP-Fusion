@@ -127,6 +127,28 @@
 			x: 0.0d
 			y: -1.0d
 		}
+		{
+			description: [
+				"Many elements of the Create mod have been modified and split into several tiers to fit Gregtech's progression."
+				""
+				"Notably:"
+				"- Mechanical machines have the same tiers seen in Gregtech"
+				"- Mechanical machines have circuit slots"
+				"- Mechanical machines can use Gregtech recipes and may require higher tier machines to process them"
+				"- Stress values have been significantly dialed down to match Gregtech voltages"
+				"- Things like shafts, cogwheels and gears only carry a limited amount of stress capacity"
+			]
+			icon: "greate:rhodium_plated_palladium_cogwheel"
+			id: "6470F67B10BC7267"
+			tasks: [{
+				id: "6D3623BB9D10CC33"
+				title: "Ok"
+				type: "checkmark"
+			}]
+			title: "Kinetic Overhaul"
+			x: 1.0d
+			y: 3.0d
+		}
 	]
 	subtitle: ["not really quests but still useful"]
 	title: "Info"

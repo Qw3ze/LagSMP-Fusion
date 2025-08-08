@@ -243,7 +243,7 @@
 	#Whether the Auction House will appear in the trading terminal.
 	#If false, you will only be able to access the Auction House from an Auction Stand.
 	#Default: true
-	visibleOnTerminal=true
+	visibleOnTerminal=false
 	
 	#The minimum number of days an auction can have its duration set to.
 	#If given a 0 day minimum, the minimum auction duration will be 1 hour.
@@ -388,7 +388,7 @@
 	[compat.claim_purchasing]
 		#Whether the '/lcclaims buy claim' command will be accessible to players.
 		#Default: false
-		allowClaimPurchase=false
+		allowClaimPurchase=true
 		
 		#The price per claim chunk purchased.
 		#See the wiki for Money Value format: https://github.com/Lightman314/LightmansCurrency/wiki/Money-Value-Arguments

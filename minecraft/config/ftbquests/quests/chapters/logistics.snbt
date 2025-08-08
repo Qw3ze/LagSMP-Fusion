@@ -11,21 +11,6 @@
 	quests: [
 		{
 			description: [
-				"Place a mechanical belt on two shafts and it will do what a conveyor does. It can also be used to transport rotation, I guess."
-				""
-				"Conveyors can also be dyed by right clicking on them."
-			]
-			id: "46CA7B6D8BB832B2"
-			tasks: [{
-				id: "7CF9784FF3AE8564"
-				item: "create:belt_connector"
-				type: "item"
-			}]
-			x: -6.0d
-			y: -2.0d
-		}
-		{
-			description: [
 				"The andesite funnel moves items in and out of containers. It works well with the mechanical belt."
 				""
 				"The andesite tunnel can be used to merge mechanical belts, but it's mostly asthetic."
@@ -692,6 +677,79 @@
 			title: "Railway Navigator"
 			x: -4.0d
 			y: 4.0d
+		}
+		{
+			dependencies: ["67FB0464B33A6519"]
+			description: [
+				"If you didn't read the info page, most parts and machines come in several tiers now. The most important example of this is how higher tier shafts are able to carry more stress capacity than lower tier shafts. You'll want to be upgrading your machinery and power network."
+				""
+				"Anyways, craft these so you can power your machines."
+			]
+			icon: "greate:andesite_alloy_cogwheel"
+			id: "6E96232EA9FA5CDF"
+			tasks: [
+				{
+					count: 8L
+					id: "66BD94586793CD9F"
+					item: "greate:andesite_alloy_shaft"
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "3F79F960E4E19C13"
+					item: "greate:andesite_alloy_cogwheel"
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "5D42EEC7E817FBBB"
+					item: "greate:large_andesite_alloy_cogwheel"
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "105B7D182FABF1EC"
+					item: "greate:andesite_alloy_gearbox"
+					type: "item"
+				}
+			]
+			title: "Andesite Alloy Kinetic Parts"
+			x: -6.0d
+			y: -9.5d
+		}
+		{
+			description: [
+				"You might have noticed a pattern with the stress capacity for each tier, like how it scales like how electrical voltage does. If you did, good job! :]"
+				""
+				"Anyways, with steel, your kinetic power network can support more appliances at once. You'll want to be careful, though, as things beyond the andesite age become much more expensive."
+			]
+			icon: "greate:steel_cogwheel"
+			id: "70C5540B15321002"
+			tasks: [
+				{
+					id: "44E94959229D6DDE"
+					item: "greate:steel_shaft"
+					type: "item"
+				}
+				{
+					id: "70BACE66A3F67FCC"
+					item: "greate:steel_cogwheel"
+					type: "item"
+				}
+				{
+					id: "122891DA68524B80"
+					item: "greate:large_steel_cogwheel"
+					type: "item"
+				}
+				{
+					id: "27AAF93D68ED36A7"
+					item: "greate:steel_gearbox"
+					type: "item"
+				}
+			]
+			title: "Steel Kinetic Parts"
+			x: -5.0d
+			y: -9.5d
 		}
 	]
 	subtitle: ["get your items from point a to point b"]

@@ -7,39 +7,52 @@
 	id: "4D5E33A2CF09F313"
 	order_index: 0
 	progression_mode: "linear"
-	quest_links: [ ]
-	quests: [
+	quest_links: [
 		{
-			description: [
-				"Ready to get started? First, you'll want to make wrought iron, a stronger and more durable version of normal iron. You can make it by smelting iron."
-				""
-				"&7Note: I never actually intended for wrought iron to be needed this early, the Greate mod just kinda forced it upon every recipe. Sorry!&r"
-			]
-			id: "5C4F5B6146961D54"
-			shape: "diamond"
-			size: 1.5d
-			tasks: [{
-				id: "31669D6C344079E4"
-				item: "gtceu:wrought_iron_ingot"
-				type: "item"
-			}]
-			title: "Wrought Iron"
-			x: 0.0d
+			id: "19CBCA8E36618901"
+			linked_quest: "6E96232EA9FA5CDF"
+			x: 2.0d
+			y: -2.0d
+		}
+		{
+			id: "09A4577936083ED9"
+			linked_quest: "305D9B784EC6C764"
+			x: 4.0d
 			y: 0.0d
 		}
 		{
-			dependencies: ["5C4F5B6146961D54"]
-			description: ["With wrought iron, you can make andesite alloy, the gateway to kinetic machinery."]
+			id: "632917E9813AA0A4"
+			linked_quest: "1529141CA4E7B7F3"
+			x: 6.0d
+			y: 0.0d
+		}
+	]
+	quests: [
+		{
+			description: ["With either iron, zinc, tin or silver, you can make andesite alloy, the gateway to kinetic machinery."]
 			id: "67FB0464B33A6519"
 			shape: "diamond"
 			size: 1.5d
 			tasks: [{
+				count: 16L
 				id: "7919B760AB509BE6"
 				item: "create:andesite_alloy"
 				type: "item"
 			}]
+			title: "Andesite Alloy"
 			x: 2.0d
 			y: 0.0d
+		}
+		{
+			dependencies: ["305D9B784EC6C764"]
+			id: "32A61FDD3B028172"
+			tasks: [{
+				id: "3093C9EB21A0BA7D"
+				item: "gtceu:rubber_plate"
+				type: "item"
+			}]
+			x: 4.0d
+			y: 2.0d
 		}
 	]
 	title: "Guide: Andesite Age"

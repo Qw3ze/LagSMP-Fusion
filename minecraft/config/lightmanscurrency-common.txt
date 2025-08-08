@@ -257,27 +257,27 @@ debugLevel=0
 		[loot.entities.lists]
 			#List of Entities that will drop loot from the "lightmanscurrency:loot_addons/entity/tier1" loot table.
 			#Requires a player kill to trigger coin drops.
-			T1=["minecraft:slime","minecraft:silverfish","alexsmobs:cosmic_cod","alexsmobs:fly","alexsmobs:raccoon","alexsmobs:stradpole"]
+			T1=[]
 			
 			#List of Entities that will drop loot from the "lightmanscurrency:loot_addons/entity/tier2" loot table.
 			#Requires a player kill to trigger coin drops.
-			T2=["minecraft:zombie","minecraft:skeleton","minecraft:creeper","minecraft:spider","minecraft:cave_spider","minecraft:husk","minecraft:stray","minecraft:zombie_villager","minecraft:drowned","alexsmobs:bone_serpent","alexsmobs:anaconda","alexsmobs:froststalker","alexsmobs:rattlesnake","alexsmobs:rockey_roller","alexsmobs:skreecher","alexsmobs:soul_vulture","alexsmobs:tarantula_hawk"]
+			T2=[]
 			
 			#List of Entities that will drop loot from the "lightmanscurrency:loot_addons/entity/tier3" loot table.
 			#Requires a player kill to trigger coin drops.
-			T3=["minecraft:guardian","minecraft:elder_guardian","minecraft:phantom","minecraft:blaze","minecraft:ghast","minecraft:hoglin","minecraft:piglin_brute","minecraft:piglin","minecraft:zombified_piglin","alexsmobs:crimson_mosquito","alexsmobs:dropbear","alexsmobs:guster","alexsmobs:skelewag","alexsmobs:tusklin"]
+			T3=[]
 			
 			#List of Entities that will drop loot from the "lightmanscurrency:loot_addons/entity/tier4" loot table.
 			#Requires a player kill to trigger coin drops.
-			T4=["minecraft:enderman","minecraft:shulker","#minecraft:raiders","alexsmobs:enderiophage","alexsmobs:farseer","alexsmobs:murmur","alexsmobs:straddler"]
+			T4=[]
 			
 			#List of Entities that will drop loot from the "lightmanscurrency:loot_addons/entity/tier5" loot table.
 			#Requires a player kill to trigger coin drops.
-			T5=["minecraft:wither_skeleton"]
+			T5=[]
 			
 			#List of Entities that will drop loot from the "lightmanscurrency:loot_addons/entity/tier6" loot table.
 			#Requires a player kill to trigger coin drops.
-			T6=["alexsmobs:mimicube"]
+			T6=[]
 			
 			#List of Entities that will drop loot from the "lightmanscurrency:loot_addons/boss/tier1" loot table.
 			#Does NOT require a player kill to trigger coin drops.
@@ -293,15 +293,15 @@ debugLevel=0
 			
 			#List of Entities that will drop loot from the "lightmanscurrency:loot_addons/boss/tier4" loot table.
 			#Does NOT require a player kill to trigger coin drops.
-			BossT4=["minecraft:warden"]
+			BossT4=[]
 			
 			#List of Entities that will drop loot from the "lightmanscurrency:loot_addons/boss/tier5" loot table.
 			#Does NOT require a player kill to trigger coin drops.
-			BossT5=["minecraft:ender_dragon"]
+			BossT5=[]
 			
 			#List of Entities that will drop loot from the "lightmanscurrency:loot_addons/boss/tier6" loot table.
 			#Does NOT require a player kill to trigger coin drops.
-			BossT6=["minecraft:wither","alexsmobs:void_worm"]
+			BossT6=[]
 			
 	#Chest Loot Settings
 	[loot.chests]
