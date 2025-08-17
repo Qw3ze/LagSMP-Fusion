@@ -4,6 +4,9 @@ ServerEvents.recipes(event => {
     //recipes here are from star technology
     //they were like almost perfect so i decided to use them to save time
     //some stuff is edited tho
+    event.recipes.greate.milling('2x kubejs:certus_quartz_seed', 'ae2:certus_quartz_dust');
+    event.recipes.create.filling('ae2:certus_quartz_crystal', ['kubejs:certus_quartz_seed',Fluid.of('minecraft:water', 1000)]);
+
     event.recipes.gtceu.macerator(id('fluix_dust'))
         .itemInputs('ae2:fluix_crystal')
         .itemOutputs('ae2:fluix_dust')

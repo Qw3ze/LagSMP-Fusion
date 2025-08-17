@@ -1,3 +1,7 @@
+//if your a nerd, youd call this "unification"
+//but i like these sillier names a lot more
+//i had no clue that there was a mod that made it so i didnt have to write this whole script (almost unified)
+//i wish i learned that there was one sooner lol
 ServerEvents.recipes((event) => {
   const greg = event.recipes.gtceu;
   
@@ -161,7 +165,8 @@ ServerEvents.recipes((event) => {
         "#forge:rods/electrum"
     ]
   );
-  //red alloy
+  //red alloy (gone since i switched to more red :3)
+  /*
   event.remove({ output: "projectred_core:red_iron_comp" });
   removedupes(
     "gtceu:red_alloy_ingot",
@@ -170,7 +175,8 @@ ServerEvents.recipes((event) => {
         "#forge:ingots/red_alloy"
     ]
   );
-  //electrotine
+  
+  //electrotine (also gone)
   event.remove({ output: "projectred_core:electrotine_iron_comp" });
   event.remove({ output: "projectred_core:electrotine_silicon_comp" });
   removedupes(
@@ -180,6 +186,7 @@ ServerEvents.recipes((event) => {
         "#forge:dusts/electrotine"
     ]
   );
+  */
   //netherite
   removedupes(
     "gtceu:netherite_nugget",
