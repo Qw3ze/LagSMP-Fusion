@@ -1,5 +1,20 @@
 ServerEvents.recipes((event) => {
     const greg = event.recipes.gtceu;
+    //easier deployer
+    event.shaped('kubejs:rubber_hand', [
+            ' A ', 
+            'ABA',
+            ' C '
+        ], {
+            A: 'gtceu:rubber_plate', 
+            B: 'gtceu:rubber_ingot',
+            C: 'create:andesite_alloy'   
+    });
+    event.replaceInput(
+    { input: 'create:brass_hand' },
+        'create:brass_hand',
+        '#kubejs:deployer_hands'
+    );
     //circuit stuff
     event.remove({ output: 'create:electron_tube' });
     event.shaped('create:electron_tube', [
@@ -30,7 +45,6 @@ ServerEvents.recipes((event) => {
         'gtceu:vacuum_tube',
         '#gtceu:circuits/ulv'
     );
-
     //yummy uranium thing
     event.remove({ input:'crowns:uranium_ingot' });
     event.remove({ input:'crowns:fuel_assembly' });

@@ -7,26 +7,7 @@
 	id: "4D5E33A2CF09F313"
 	order_index: 0
 	progression_mode: "linear"
-	quest_links: [
-		{
-			id: "19CBCA8E36618901"
-			linked_quest: "6E96232EA9FA5CDF"
-			x: 2.0d
-			y: -2.0d
-		}
-		{
-			id: "09A4577936083ED9"
-			linked_quest: "305D9B784EC6C764"
-			x: 4.0d
-			y: 0.0d
-		}
-		{
-			id: "632917E9813AA0A4"
-			linked_quest: "1529141CA4E7B7F3"
-			x: 6.0d
-			y: 0.0d
-		}
-	]
+	quest_links: [ ]
 	quests: [
 		{
 			description: ["With either iron, zinc, tin or silver, you can make andesite alloy, the gateway to kinetic machinery."]
@@ -44,7 +25,6 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["305D9B784EC6C764"]
 			id: "32A61FDD3B028172"
 			tasks: [{
 				id: "3093C9EB21A0BA7D"
@@ -55,5 +35,5 @@
 			y: 2.0d
 		}
 	]
-	title: "Guide: Andesite Age"
+	title: "Andesite Age"
 }

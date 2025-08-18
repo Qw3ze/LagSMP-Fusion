@@ -17,6 +17,22 @@ ServerEvents.tags('item', event => {
     event.remove('kubejs:reusable_discs', 'lagsmp_discs:golden_music_tire');
     event.remove('kubejs:reusable_discs', 'supplementaries:pancake');
     
+    event.add('kubejs:deployer_hands', 'create:brass_hand');
+    event.add('kubejs:deployer_hands', 'kubejs:rubber_hand');
+
+    event.add('kubejs:carbon', 'minecraft:coal');
+    event.add('kubejs:carbon', 'minecraft:charcoal');
+    event.add('kubejs:carbon', 'gtceu:coke_gem');
+
+    event.add('kubejs:carbon_dusts', 'gtceu:coal_dust');
+    event.add('kubejs:carbon_dusts', 'gtceu:charcoal_dust');
+    event.add('kubejs:carbon_dusts', 'gtceu:coke_dust');
+    event.add('kubejs:carbon_dusts', 'gtceu:carbon_dust');
+
+    event.add('kubejs:carbon_blocks', 'minecraft:coal_block');
+    event.add('kubejs:carbon_blocks', 'minecraft:charcoal_block');
+    event.add('kubejs:carbon_blocks', 'gtceu:coke_block');
+
     event.remove('forge:raw_materials/uranium', 'alexscaves:uranium');
     
     event.remove('forge:storage_blocks/neodymium', 'alexscaves:block_of_scarlet_neodymium');

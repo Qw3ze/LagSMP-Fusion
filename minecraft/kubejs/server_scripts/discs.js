@@ -69,8 +69,8 @@ ServerEvents.recipes((event) => {
     .mixer("chicken_jockey")
     .itemInputs(
         'etched:blank_music_disc',
-        '16x minecraft:raw_chicken')
-    .fluidInputs(Fluid.of('tconstruct:blazing_blood', 1000))
+        '16x minecraft:chicken')
+    .inputFluids(Fluid.of('tconstruct:blazing_blood', 1000))
     .itemOutputs("lagsmp_discs:lava_chicken_music_disc")
     .duration(500)
     .EUt(8);
@@ -79,7 +79,7 @@ ServerEvents.recipes((event) => {
     .itemInputs(
         'etched:blank_music_disc',
         '4x minecraft:ghast_tear')
-    .fluidInputs(Fluid.of('minecraft:water', 1000))
+    .inputFluids(Fluid.of('minecraft:water', 1000))
     .itemOutputs("lagsmp_discs:tears_music_disc")
     .duration(500)
     .EUt(8);
