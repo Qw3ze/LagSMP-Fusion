@@ -165,19 +165,6 @@ ServerEvents.recipes((event) => {
         "#forge:rods/electrum"
     ]
   );
-  //iron alloys
-  removedupes(
-    "createdeco:industrial_iron_ingot",
-    [
-        "dustrial_decor:industrial_iron_billet",
-    ]
-  );
-  removedupes(
-    "createdeco:cast_iron_ingot",
-    [
-        "dustrial_decor:cast_iron_billet",
-    ]
-  );
   //red alloy (gone since i switched to more red :3)
   /*
   event.remove({ output: "projectred_core:red_iron_comp" });
